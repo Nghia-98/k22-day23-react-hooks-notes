@@ -20,21 +20,23 @@ function App() {
   }, []);
 
   return (
-    <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 py-10">
-      <h1 className="text-2xl font-bold text-gray-900">Ghi chú học tập</h1>
+    <div className="min-h-screen bg-gray-50">
+      <div className="mx-auto flex max-w-2xl flex-col gap-6 px-4 py-10">
+        <h1 className="text-2xl font-bold text-gray-900">Ghi chú học tập</h1>
 
-      <NoteForm onAddNote={handleAddNote} />
+        <NoteForm onAddNote={handleAddNote} />
 
-      <SearchAndFilterBar
-        keyword={keyword}
-        onKeywordChange={setKeyword}
-        filterMode={filterMode}
-        onFilterModeChange={setFilterMode}
-      />
+        <SearchAndFilterBar
+          keyword={keyword}
+          onKeywordChange={setKeyword}
+          filterMode={filterMode}
+          onFilterModeChange={setFilterMode}
+        />
 
-      <p className="text-sm text-gray-500">Hiển thị {filteredNotes.length} ghi chú</p>
+        <p className="text-sm text-gray-500">Hiển thị {filteredNotes.length} ghi chú</p>
 
-      <NoteList notes={filteredNotes} onToggleImportant={handleToggleImportant} />
+        <NoteList notes={filteredNotes} onToggleImportant={handleToggleImportant} />
+      </div>
     </div>
   );
 }

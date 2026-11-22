@@ -30,7 +30,10 @@ function NoteForm({ onAddNote }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="flex flex-col gap-3 rounded border bg-white p-4">
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col gap-3 rounded border bg-white p-4 shadow-md"
+    >
       <NoteTitleInput
         ref={titleInputRef}
         value={title}

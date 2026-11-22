@@ -6,7 +6,7 @@ function SearchAndFilterBar({ keyword, onKeywordChange, filterMode, onFilterMode
         value={keyword}
         onChange={(e) => onKeywordChange(e.target.value)}
         placeholder="Tìm theo tiêu đề hoặc nội dung..."
-        className="flex-1 rounded border px-3 py-2 text-sm"
+        className="flex-1 rounded border px-3 py-2 text-sm shadow-md"
       />
       <div className="flex gap-2">
         <button
