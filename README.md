@@ -2,7 +2,7 @@
 
 Repo: [https://github.com/Nghia-98/k22-day23-react-hooks-notes](https://github.com/Nghia-98/k22-day23-react-hooks-notes)
 
-Demo: ()
+Demo: [https://k22-day23-react-hooks-notes.vercel.app](https://k22-day23-react-hooks-notes.vercel.app)
 
 Danh sách ghi chú học tập: thêm ghi chú, tìm kiếm/lọc theo "Quan trọng", đánh
 dấu/bỏ đánh dấu quan trọng từng ghi chú. Không gọi API, không dùng React
